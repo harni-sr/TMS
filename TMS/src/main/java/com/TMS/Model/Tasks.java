@@ -16,7 +16,6 @@ public class Tasks {
 	String title;
 	LocalDate DueDate;
 	String Status;
-	String Hi;
 	
 	public Long getId() {
 		return id;
