@@ -14,8 +14,8 @@ public class Tasks {
 	@GeneratedValue
 	Long id;
 	String title;
-	LocalDate DueDate;
-	String Status;
+	LocalDate dueDate;
+	String status;
 	
 	public Long getId() {
 		return id;
@@ -30,30 +30,30 @@ public class Tasks {
 		this.title = title;
 	}
 	public LocalDate getDueDate() {
-		return DueDate;
+		return dueDate;
 	}
 	public void setDueDate(LocalDate dueDate) {
-		DueDate = dueDate;
+		dueDate = dueDate;
 	}
 	public String getStatus() {
-		return Status;
+		return status;
 	}
 	public void setStatus(String status) {
-		Status = status;
+		status = status;
 	}
 	public Tasks(Long id, String title, LocalDate dueDate, String status) {
 		super();
 		this.id = id;
 		this.title = title;
-		DueDate = dueDate;
-		Status = status;
+		dueDate = dueDate;
+		status = status;
 	}
 	public Tasks() {
 		super();
 	}
 	@Override
 	public String toString() {
-		return "Tasks [id=" + id + ", title=" + title + ", DueDate=" + DueDate + ", Status=" + Status + "]";
+		return "Tasks [id=" + id + ", title=" + title + ", DueDate=" + dueDate + ", Status=" + status + "]";
 	}
 	
 	
